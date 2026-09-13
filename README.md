@@ -89,14 +89,67 @@ who has the average greater than 60.
 
 
 
-
-
-
 # **C. CATEGORY-AVERAGE VISUALIZATION**
 
-
-
 **Objectives:**
+
+Examine how the recorded Average differs across the three categorical features Track, Gender, and
+Hometown.
+a. For each feature, compute the mean of Average for every category using Pandas.
+b. Display the three summary tables.
+c. Create one figure containing three bar charts: mean Average by Track, by Gender, and by
+Hometown.
+d. Below the figure, write three concise statements identifying the category with the highest sample
+mean for each feature
+
+
+
+So for this problem, I used multiple user-defined functions. And for the first function, the aim is to
+get the 'Average' datas for each category. 
+
+```python
+track_mean = df.groupby('Track')['Average'].mean().reset_index()
+gender_mean = df.groupby('Gender')['Average'].mean().reset_index()
+hometown_mean = df.groupby('Hometown')['Average'].mean().reset_index()
+```
+
+the main function that I used for that is the:
+
+```
+df.groupby() - You can group by multiple categories at once by passing a list of column names
+```
+
+this function only gets the specified categories which is in this case is the Track and the Average.
+I used the function thrice, with three different categories. I also used the function ``` .mean()```, to get the 
+average for each categories. I also used the function ``` .reset_index()``` , this resets the number of the data
+back from 0.
+
+Finally, I used the functions:
+
+```
+plt.subplot() -  It acts as a wrapper that automatically initializes a Figure object that can have multiple plots
+plt.bar() - this function is used to set the vertical bar graphs.
+plt.title() - this is the name of the specified graph.
+plt.xlabel() - this is the label that is in the x-axis, where in this case are the categories.
+plt.ylabel() - this the name or the label for the y-axis, where in this case is the mean average.
+```
+This 5 functions are used to create the multiple bar graphs. However, what made the graphs visible is the
+```plt.tight_layout()``` and the ```plt.show()```. The 'plt.show' showed the designed graph, and the 
+'plt.tight_layout' made the graphs not overlap each other.
+
+That's all for my fourth assignment. Thank you for reading!!
+
+**README** file version history:
+
+September 14, 2026: Initial README output uploaded.
+
+
+
+
+
+
+
+
 
 
 
