@@ -36,14 +36,15 @@ This lets Name, Gender, Math, Electronics, and Average retain only from the VisC
 
 Finally, to display the data frame and the number of rows, I used 
 
-```
+```python
 display() - this used particularly in numpy or pandas, an alternative version of print but print is only used for
 strings, int, etc.
 ```
 
 I used display mainly for displaying the dataframe itself.
-And to finally count the rows of the specified data frame, I used
-```
+And to finally count the rows of the specified data frame, I used:
+
+```python
 len() -  function in Python returns the number of items in an object. 
 ```
 
@@ -115,7 +116,7 @@ hometown_mean = df.groupby('Hometown')['Average'].mean().reset_index()
 
 the main function that I used for that is the:
 
-```
+```python
 df.groupby() - You can group by multiple categories at once by passing a list of column names
 ```
 
@@ -126,7 +127,7 @@ back from 0.
 
 Finally, I used the functions:
 
-```
+```python
 plt.subplot() -  It acts as a wrapper that automatically initializes a Figure object that can have multiple plots
 plt.bar() - this function is used to set the vertical bar graphs.
 plt.title() - this is the name of the specified graph.
@@ -142,6 +143,8 @@ That's all for my fourth assignment. Thank you for reading!!
 **README** file version history:
 
 September 14, 2026: Initial README output uploaded.
+
+September 17, 2026: Revised README output was uploaded.
 
 
 
