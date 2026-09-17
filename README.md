@@ -36,17 +36,16 @@ This lets Name, Gender, Math, Electronics, and Average retain only from the VisC
 
 Finally, to display the data frame and the number of rows, I used 
 
-```python
-display() - this used particularly in numpy or pandas, an alternative version of print but print is only used for
+● ``` display() ``` - this used particularly in numpy or pandas, an alternative version of print but print is only used for
 strings, int, etc.
-```
+
 
 I used display mainly for displaying the dataframe itself.
 And to finally count the rows of the specified data frame, I used:
 
-```python
-len() -  function in Python returns the number of items in an object. 
-```
+● ``` len() ``` -  function in Python returns the number of items in an object. 
+ 
+
 
 
 
@@ -116,13 +115,12 @@ hometown_mean = df.groupby('Hometown')['Average'].mean().reset_index()
 
 the main function that I used for that is the:
 
-```python
-df.groupby() - You can group by multiple categories at once by passing a list of column names
-```
+● ``` df.groupby() ``` - You can group by multiple categories at once by passing a list of column names
+
 
 this function only gets the specified categories which is in this case is the Track and the Average.
 I used the function thrice, with three different categories. I also used the function ``` .mean()```, to get the 
-average for each categories. I also used the function ``` .reset_index()``` , this resets the number of the data
+average for each category. Lastly, I used the function ``` .reset_index()``` , since this resets the number of the data
 back from 0.
 
 Finally, I used the functions:
@@ -134,7 +132,8 @@ plt.title() - this is the name of the specified graph.
 plt.xlabel() - this is the label that is in the x-axis, where in this case are the categories.
 plt.ylabel() - this the name or the label for the y-axis, where in this case is the mean average.
 ```
-This 5 functions are used to create the multiple bar graphs. However, what made the graphs visible is the
+
+These 5 functions are used to create the multiple bar graphs. However, what made the graphs visible is the
 ```plt.tight_layout()``` and the ```plt.show()```. The 'plt.show' showed the designed graph, and the 
 'plt.tight_layout' made the graphs not overlap each other.
 
